@@ -1,17 +1,16 @@
 source 'https://rubygems.org'
 
-gem 'rails', '~> 5.1.2'
 gem "active_model_serializers", '~> 0.9.0'
 gem 'dotenv-rails', require: 'dotenv/rails-now'
 gem 'foundation-rails'
 gem 'pg', '~> 0.18'
 gem 'puma', '~> 3.7'
+gem 'rails', '~> 5.1.2'
 gem 'sass-rails', '~> 5.0'
 gem 'uglifier', '>= 1.3.0'
 gem 'webpacker'
 
 group :development, :test do
-  # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   gem 'capybara'
   gem 'database_cleaner'

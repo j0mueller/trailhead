@@ -17,7 +17,17 @@
 /yarn-error.log
 
 .byebug_history
-/public/packs
+
+
+/coverage
+
 /node_modules
 /app/assets/javascripts/bundle.js
 /react/coverage
+
+.env
+
+/public/uploads
+*.DS_Store
+/public/packs
+/node_modules

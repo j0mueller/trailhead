@@ -1,0 +1,10 @@
+.top-bar {
+  background-color: black;
+  height: 60px;
+  color: white;
+}
+
+.title {
+  color: white;
+  font-size: 40px;
+}

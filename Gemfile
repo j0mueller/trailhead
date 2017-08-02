@@ -6,7 +6,6 @@ gem 'foundation-rails'
 gem 'pg', '~> 0.18'
 gem 'puma', '~> 3.7'
 gem 'rails', '~> 5.1.2'
-gem 'sass-rails'
 gem 'uglifier', '>= 1.3.0'
 gem 'webpacker'
 

@@ -1,8 +1,11 @@
 source 'https://rubygems.org'
 
 gem "active_model_serializers", '~> 0.9.0'
+gem 'devise'
 gem 'dotenv-rails', require: 'dotenv/rails-now'
 gem 'foundation-rails'
+gem 'jquery-rails'
+gem 'jquery-ui-rails'
 gem 'pg', '~> 0.18'
 gem 'puma', '~> 3.7'
 gem 'rails', '~> 5.1.2'

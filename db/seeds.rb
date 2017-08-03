@@ -73,8 +73,38 @@
 #   description: "Mount Ida is a mountain summit in the northern Front Range of the Rocky Mountains of North America. The 12,865-foot (3,921 m) peak is located in the Rocky Mountain National Park Wilderness, 13.4 miles (21.6 km) west (bearing 268°) of the Town of Estes Park, Colorado, United States, on the Continental Divide between Grand and Larimer counties. The mountain was probably named after Mount Ida on Crete."
 # )
 
-Hike.create!(
-  name: "Monadnock-Sunapee Greenway",
-  location: "New Hampshire",
-  description: "The Monadnock-Sunapee Greenway (MSG) is a 50-mile (80 km) hiking trail that traverses the highlands of southern New Hampshire from Mount Monadnock in Jaffrey to Mount Sunapee in Newbury. Located approximately 27 miles (43 km) from the city of Concord, New Hampshire, the trail traverses a rural, heavily glaciated and metamorphic upland studded with lakes, heath barrens, the rocky summits of several monadnocks, and dense woodland of the northern hardwood forest type. The trail is maintained primarily through the efforts of the Monadnock-Sunapee Greenway Trail Club."
+# Hike.create!(
+#   name: "Monadnock-Sunapee Greenway",
+#   location: "New Hampshire",
+#   description: "The Monadnock-Sunapee Greenway (MSG) is a 50-mile (80 km) hiking trail that traverses the highlands of southern New Hampshire from Mount Monadnock in Jaffrey to Mount Sunapee in Newbury. Located approximately 27 miles (43 km) from the city of Concord, New Hampshire, the trail traverses a rural, heavily glaciated and metamorphic upland studded with lakes, heath barrens, the rocky summits of several monadnocks, and dense woodland of the northern hardwood forest type. The trail is maintained primarily through the efforts of the Monadnock-Sunapee Greenway Trail Club."
+# )
+
+WishlistHike.create!(
+  wishlist_id: 2,
+  hike_id: 1
+)
+
+WishlistHike.create!(
+  wishlist_id: 2,
+  hike_id: 2
+)
+
+WishlistHike.create!(
+  wishlist_id: 3,
+  hike_id: 1
+)
+
+WishlistHike.create!(
+  wishlist_id: 3,
+  hike_id: 4
+)
+
+WishlistHike.create!(
+  wishlist_id: 3,
+  hike_id: 3
+)
+
+WishlistHike.create!(
+  wishlist_id: 4,
+  hike_id: 3
 )

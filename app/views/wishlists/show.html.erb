@@ -4,5 +4,5 @@
 <div class="text-center">
   <% @wishlist = Wishlist.find(params["id"]) %>
   <% @wishlist.wishlist_hikes.each do |hike| %>
-  <%= hike.name, hike.location %>
+  <%= Hike.find(hike.name, hike.location %>
 </div>

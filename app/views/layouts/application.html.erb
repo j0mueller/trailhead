@@ -9,7 +9,7 @@
 
     <%= stylesheet_link_tag    "application" %>
     <%= javascript_include_tag "application" %>
-    <%= javascript_pack_tag "application" %>
+    <%= javascript_pack_tag    "application" %>
   </head>
 
   <body>
@@ -20,9 +20,11 @@
 
       <section class="top-bar-section inline-block right">
           <% if current_user %>
+            <% @wishlist = Wishlist.where(user_id: current_user.id) %>
+            <i><%= link_to "Wishlist", wishlist_path(@wishlist) %></i>
+            &nbsp; &nbsp;
             <i><%= link_to current_user.username, user_path(current_user.id)%></i>
             &nbsp; &nbsp;
-            <i>Link placeholder for 'Wishlist'</i>
             <i><%= link_to 'Sign Out', destroy_user_session_path, method: :delete %></i>
           <% else  %>
             <i><%= link_to 'Create Account', new_user_registration_path %></i>

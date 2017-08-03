@@ -9,9 +9,11 @@ Rails.application.routes.draw do
   # get '/hikes', to: 'static_pages#index'
 
   resources :hikes, only: [:index, :show]
-  resources :users, only: [:index, :show] do
-    resources :wishlists, only: [:show]
-  end
+  resources :users, only: [:index, :show]
+  resources :wishlists, only: [:show]
+
+
+  resources :wishlist_hikes
 
   namespace :api do
     namespace :v1 do

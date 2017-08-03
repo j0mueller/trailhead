@@ -22,6 +22,7 @@
           <% if current_user %>
             <i><%= link_to current_user.username, user_path(current_user.id)%></i>
             &nbsp; &nbsp;
+            <i>Link placeholder for 'Wishlist'</i>
             <i><%= link_to 'Sign Out', destroy_user_session_path, method: :delete %></i>
           <% else  %>
             <i><%= link_to 'Create Account', new_user_registration_path %></i>

@@ -1,2 +1,10 @@
 
-<h1>Hike Search Page</h1>
+<h1 class="text-center">Trails</h1>
+<div class="map" id="map"></div>
+<br>
+<% @hikes.each do |hike| %>
+  <div class="hike small-10 small-centered columns">
+    <h4><%= link_to hike.name, hike_path(hike.id) %>, <%= hike.location %></h4>
+    <p><%= hike.description %></p>
+  </div><br>
+<% end %>

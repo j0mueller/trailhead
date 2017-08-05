@@ -4,12 +4,14 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+
     <title><%= content_for?(:title) ? yield(:title) : "Untitled" %></title>
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    "application" %>
     <%= javascript_include_tag "application" %>
-    <%= javascript_pack_tag "application" %>
+    <%= javascript_pack_tag    "application" %>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=<%= ENV["GOOGLE_MAPS_API_KEY"] %>&libraries=places"></script>
   </head>
 
   <body>
@@ -20,9 +22,10 @@
 
       <section class="top-bar-section inline-block right">
           <% if current_user %>
+            <i><%= link_to "My Lists", user_hikes_path %></i>
+            &nbsp; &nbsp;
             <i><%= link_to current_user.username, user_path(current_user.id)%></i>
             &nbsp; &nbsp;
-            <i>Link placeholder for 'Wishlist'</i>
             <i><%= link_to 'Sign Out', destroy_user_session_path, method: :delete %></i>
           <% else  %>
             <i><%= link_to 'Create Account', new_user_registration_path %></i>
@@ -31,11 +34,14 @@
           <% end  %>
       </section>
     </nav>
+    <%= image_tag('panorama.png', class: "panorama") %>
 
     <p class="notice"><%= notice %></p>
     <p class="alert"><%= alert %></p>
 
     <%= yield %>
+
+
 
   </body>
 </html>

@@ -1,5 +1,5 @@
 FactoryGirl.define do
-  factory :wishlist do
+  factory :user_hike do
     
   end
 end

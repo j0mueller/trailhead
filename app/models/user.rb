@@ -6,6 +6,5 @@ class User < ApplicationRecord
 
   has_many :user_hikes
   has_many :hikes, through: :user_hikes
-  
   validates :username, presence: true, uniqueness: true
 end

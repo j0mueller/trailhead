@@ -2,9 +2,8 @@ class WishlistHikesController < ApplicationController
   before_action :authenticate_user!
 
   def index
-    @wishlist = WishlistHike.find(params[:wishlist_id])
-    @hike = WishlistHike.find(params[:hike_id])
-    @wishlist_hikes = @wishlist.wishlist_hikes
+    wishlist
+    @wishlist_hikes = WishlistHike.where(wishlist_id: )
   end
 
   def show

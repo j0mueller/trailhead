@@ -10,14 +10,12 @@ Rails.application.routes.draw do
 
   resources :hikes, only: [:index, :show]
   resources :users, only: [:index, :show]
-  resources :wishlists, only: [:show]
+  resources :user_hikes, only: [:index, :new, :create, :destroy]
 
-
-  resources :wishlist_hikes
 
   namespace :api do
     namespace :v1 do
-      resources :hikes, only: [:index, :show]
+      resources :hikes, only: [:index, :show, :create]
     end
   end
 

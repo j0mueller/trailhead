@@ -79,32 +79,32 @@
 #   description: "The Monadnock-Sunapee Greenway (MSG) is a 50-mile (80 km) hiking trail that traverses the highlands of southern New Hampshire from Mount Monadnock in Jaffrey to Mount Sunapee in Newbury. Located approximately 27 miles (43 km) from the city of Concord, New Hampshire, the trail traverses a rural, heavily glaciated and metamorphic upland studded with lakes, heath barrens, the rocky summits of several monadnocks, and dense woodland of the northern hardwood forest type. The trail is maintained primarily through the efforts of the Monadnock-Sunapee Greenway Trail Club."
 # )
 
-WishlistHike.create!(
-  wishlist_id: 2,
-  hike_id: 1
-)
-
-WishlistHike.create!(
-  wishlist_id: 2,
-  hike_id: 2
-)
-
-WishlistHike.create!(
-  wishlist_id: 3,
-  hike_id: 1
-)
-
-WishlistHike.create!(
-  wishlist_id: 3,
-  hike_id: 4
-)
-
-WishlistHike.create!(
-  wishlist_id: 3,
-  hike_id: 3
-)
-
-WishlistHike.create!(
-  wishlist_id: 4,
-  hike_id: 3
-)
+# WishlistHike.create!(
+#   wishlist_id: 2,
+#   hike_id: 1
+# )
+#
+# WishlistHike.create!(
+#   wishlist_id: 2,
+#   hike_id: 2
+# )
+#
+# WishlistHike.create!(
+#   wishlist_id: 3,
+#   hike_id: 1
+# )
+#
+# WishlistHike.create!(
+#   wishlist_id: 3,
+#   hike_id: 4
+# )
+#
+# WishlistHike.create!(
+#   wishlist_id: 3,
+#   hike_id: 3
+# )
+#
+# WishlistHike.create!(
+#   wishlist_id: 4,
+#   hike_id: 3
+# )

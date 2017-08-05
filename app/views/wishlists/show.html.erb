@@ -1,8 +1,0 @@
-<h3 class="text-center"><%= "My Wishlist" %></h3>
-
-
-<div class="text-center">
-  <% @wishlist = Wishlist.find(params["id"]) %>
-  <% @wishlist.wishlist_hikes.each do |hike| %>
-  <%= Hike.find(hike.name, hike.location %>
-</div>
